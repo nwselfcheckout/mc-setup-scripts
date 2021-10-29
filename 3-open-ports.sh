@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for port in "$@"
 do
 	sudo firewall-cmd --permanent --zone=public --add-port=$port/tcp;

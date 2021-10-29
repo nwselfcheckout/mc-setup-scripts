@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt update
 sudo apt install screen openjdk-17-jre-headless firewalld
 
