@@ -7,4 +7,5 @@ echo Checking to see if everything\'s installed...
 
 screen --version
 java --version
+pip --version
 firewalld
