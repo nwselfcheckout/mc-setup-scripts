@@ -37,3 +37,9 @@ To open ports `1234` and `5678`, simply run:
 
 > **Note:** The server and query port may share the same number (because one uses TCP and the other uses UDP).
 > However, if they are all different, remember to open all of them!
+
+### Check the network's ingress
+
+In addition to opening the ports on the hosting computer, ensure that the network's ingress rules also allow
+traffic through the specified ports. At the very least, it must allow traffic for the game port (`server-port`
+in server.properties) in order for users to connect.
