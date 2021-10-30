@@ -13,8 +13,15 @@ fi
 
 for port in "$@"
 do
+	echo "Opening port $port for TCP traffic";
 	sudo firewall-cmd --permanent --zone=public --add-port=$port/tcp;
+	echo "Opening port $port for UDP traffic";
 	sudo firewall-cmd --permanent --zone=public --add-port=$port/udp;
 done
 
+echo
+echo "Reloading firewall to apply changes..."
 sudo firewall-cmd --reload
+
+echo
+echo "All done!"
